@@ -1,0 +1,321 @@
+@import url('fonts/beauty-mountains-font/BeautyMountainsPersonalUse-od7z.ttf');
+/* css reset*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root {
+    --navbar-hieght: 59px;
+}
+
+/* navbar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(30, 60, 107);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+
+}
+
+/*logo and image*/
+#logo {
+    margin: 1px 4px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 5px 30px;
+    border-radius: 50px;
+
+}
+
+/* listitem styles*/
+#navbar {
+    position: sticky;
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Anek Malayalam', sans-serif;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(241, 219, 241);
+
+}
+
+/*home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../images/home-slide-2.jpg') no-repeat;
+    height: 650px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+
+
+}
+#home .btn a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Anek Malayalam', sans-serif;
+
+}
+
+#home .btn  a:hover {
+    color: black;
+   
+}
+/* SERVICES*/
+#services {
+    margin: 34px;
+    display: flex;
+
+
+}
+
+#services h1 {
+    padding: 18px 15px;
+}
+
+#services .box {
+    border: 2px solid black;
+    padding: 34px;
+    margin: 6px;
+    border-radius: 23px;
+    background-color: rgb(223, 247, 242);
+    cursor: pointer;
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+#services .box p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn-s {
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: rgb(61, 137, 236);
+    color: white;
+   margin-left: 44%;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* client section*/
+
+
+/* cpntact section*/
+
+#contatct {
+    position: relative;
+    
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/images/header-bg-2.png') center center/cover;
+
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 10px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border-radius: 9px;
+    color: white;
+    border: 1px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#contact-box form {
+    width: 60%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.btn-c {
+
+    padding: 5px 2PX;
+    border: 2px solid white;
+    background-color: rgb(61, 137, 236);
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-c:hover{
+    border-color:1px solid black;
+}
+/* footer section*/
+
+
+
+
+/*utility classes*/
+.cards {
+    margin: 34px;
+    display: flex;
+    flex-shrink: initial;
+
+
+}
+
+.cards h1 {
+    padding: 18px 15px;
+}
+
+.cards .box {
+    border: 2px solid black;
+    padding: 34px;
+    margin: 6px;
+    border-radius: 23px;
+    background-color: rgb(223, 247, 242);
+    cursor: pointer;
+}
+
+.cards .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.cards .box p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Anek Malayalam', sans-serif;
+
+}
+
+.h-secondray {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(61, 137, 236);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid black;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.icon img {
+    height: 10%;
+    width: 10%;
+}
